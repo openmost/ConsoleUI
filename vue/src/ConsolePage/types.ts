@@ -71,3 +71,30 @@ export interface StreamEvent {
   reload?: boolean;
   truncated?: boolean;
 }
+
+export interface CommandGroup {
+  namespace: string;
+  commands: ConsoleCommand[];
+}
+
+export interface CommandLibraryState {
+  search: string;
+  selectedName: string;
+}
+
+export interface ConsolePageState {
+  line: string;
+  runs: ConsoleRun[];
+  isRunning: boolean;
+  suggestions: Suggestion[];
+  activeSuggestion: number;
+  history: string[];
+  historyIndex: number;
+  draft: string;
+  stickToBottom: boolean;
+  nextRunId: number;
+  runId: string;
+  isStopping: boolean;
+  inputId: string;
+  listboxId: string;
+}

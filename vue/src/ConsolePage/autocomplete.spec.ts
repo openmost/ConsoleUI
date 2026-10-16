@@ -25,7 +25,11 @@ function option(name: string, acceptValue = false, multiple = false): CommandOpt
   };
 }
 
-function command(name: string, options: CommandOption[] = [], aliases: string[] = []): ConsoleCommand {
+function command(
+  name: string,
+  options: CommandOption[] = [],
+  aliases: string[] = [],
+): ConsoleCommand {
   return {
     name,
     namespace: name.includes(':') ? name.split(':')[0] : '',

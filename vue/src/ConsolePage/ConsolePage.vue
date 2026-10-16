@@ -10,7 +10,7 @@
     <p>{{ translate('ConsoleUI_Disabled') }}</p>
   </ContentBlock>
   <div v-else class="consoleUi">
-    <div class="consoleUiTerminal" @click="focusInput">
+    <div class="consoleUiTerminal">
       <div class="consoleUiTerminal__bar">
         <span class="consoleUiTerminal__title">{{ translate('ConsoleUI_OutputLabel') }}</span>
         <span class="consoleUiTerminal__actions">
@@ -58,9 +58,12 @@
           </div>
           <div v-if="run.error" class="consoleUiRun__error">
             {{ run.error }}
-            <a v-if="run.reload" href="" @click.prevent="reloadPage">
-              {{ translate('ConsoleUI_ReloadPage') }}
-            </a>
+            <button
+              v-if="run.reload"
+              type="button"
+              class="consoleUiRun__reload"
+              @click="reloadPage"
+            >{{ translate('ConsoleUI_ReloadPage') }}</button>
           </div>
           <div v-if="run.status === 'running'" class="consoleUiRun__running">
             <span class="consoleUiCursor" />
@@ -91,8 +94,10 @@
               role="option"
               :aria-selected="index === activeSuggestion ? 'true' : 'false'"
               :class="['consoleUiSuggestions__item', { 'is-active': index === activeSuggestion }]"
+              tabindex="-1"
               @mousedown.prevent="acceptSuggestion(suggestion)"
               @mouseenter="activeSuggestion = index"
+              @focus="activeSuggestion = index"
             >
               <span class="consoleUiSuggestions__value">{{ suggestion.value }}</span>
               <span class="consoleUiSuggestions__description">{{ suggestion.description }}</span>
@@ -160,6 +165,7 @@ import { applySuggestion, getSuggestions } from './autocomplete';
 import { readEventStream } from './readEventStream';
 import {
   CommandCatalog,
+  ConsolePageState,
   ConsoleRun,
   OutputSegment,
   StreamEvent,
@@ -177,23 +183,6 @@ function createRunId(): string {
   const bytes = new Uint8Array(16);
   window.crypto.getRandomValues(bytes);
   return Array.from(bytes, (byte) => byte.toString(16).padStart(2, '0')).join('');
-}
-
-interface ConsolePageState {
-  line: string;
-  runs: ConsoleRun[];
-  isRunning: boolean;
-  suggestions: Suggestion[];
-  activeSuggestion: number;
-  history: string[];
-  historyIndex: number;
-  draft: string;
-  stickToBottom: boolean;
-  nextRunId: number;
-  runId: string;
-  isStopping: boolean;
-  inputId: string;
-  listboxId: string;
 }
 
 export default defineComponent({

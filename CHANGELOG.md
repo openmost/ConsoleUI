@@ -1,5 +1,9 @@
 ## Changelog
 
+### v5.0.2
+
+- Accessibility improvements in the console (command suggestions, reload link)
+
 ### v5.0.1
 
 - Requires Matomo 5.0.0 or later (`>=5.0.0,<6.0.0-b1`)
