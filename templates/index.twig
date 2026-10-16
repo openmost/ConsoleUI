@@ -1,0 +1,10 @@
+{% extends 'admin.twig' %}
+
+{% set title %}{{ 'ConsoleUI_Console'|translate }}{% endset %}
+
+{% block content %}
+    <div vue-entry="ConsoleUI.ConsolePage"
+         enabled="{{ enabled|json_encode|e('html_attr') }}"
+         catalog="{{ catalog|json_encode|e('html_attr') }}"
+    ></div>
+{% endblock %}
