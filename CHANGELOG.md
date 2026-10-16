@@ -1,5 +1,9 @@
 ## Changelog
 
+### v5.0.1
+
+- Requires Matomo 5.0.0 or later (`>=5.0.0,<6.0.0-b1`)
+
 ### v5.0.0
 
 - Console page under Administration > Platform > Console, for super users, behind a password confirmation
