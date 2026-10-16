@@ -96,26 +96,6 @@ class OpenmostCommunication
      * its openmost.com page per site locale (localized slugs), the UTM parameters are the same in every one.
      */
     private const CAMPAIGNS = [
-        'matomo_6_migration' => [
-            'placement' => self::PLACEMENT_ADMIN_HOME,
-            'title' => 'OpenmostCommunication_Matomo6Title',
-            'body' => 'OpenmostCommunication_Matomo6Body',
-            'cta' => 'OpenmostCommunication_Matomo6Cta',
-            'paths' => [
-            'en' => '/matomo/services/upgrade',
-            'fr' => '/fr/matomo/services/mise-a-jour',
-            'de' => '/de/matomo/dienstleistungen/upgrade',
-            'es' => '/es/matomo/servicios/actualizacion',
-            'it' => '/it/matomo/servizi/aggiornamento',
-            'ar' => '/ar/matomo/services/upgrade',
-            'nl' => '/nl/matomo/diensten/upgrade',
-            'pt' => '/pt/matomo/servicos/atualizacao',
-            'pl' => '/pl/matomo/uslugi/aktualizacja',
-            'zh-hans' => '/zh-hans/matomo/services/upgrade',
-            'zh-hant' => '/zh-hant/matomo/services/upgrade',
-            'ja' => '/ja/matomo/services/upgrade',
-            ],
-        ],
         'ai_chatbots_tracking' => [
             'placement' => self::PLACEMENT_AI_CHATBOTS_SETUP,
             'title' => 'OpenmostCommunication_AIChatbotsTitle',

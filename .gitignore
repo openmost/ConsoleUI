@@ -1,9 +1,7 @@
 node_modules
-/vue/dist/*.common.js
-/vue/dist/*.common.js.map
-/vue/dist/demo.html
-/vue/dist/*.map
-/vue/dist/*.development.*
 .idea
+/vue/dist/*.umd.js
+/vue/dist/*.common.js
+/vue/dist/*.map
 .claude
 .phpunit.result.cache

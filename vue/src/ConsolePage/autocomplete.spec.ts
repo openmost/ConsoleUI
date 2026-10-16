@@ -5,6 +5,7 @@
  * @license https://www.gnu.org/licenses/gpl-3.0.html GPL v3 or later
  */
 
+import { describe, expect, it } from 'vitest';
 import {
   applySuggestion,
   findCommand,
@@ -25,7 +26,11 @@ function option(name: string, acceptValue = false, multiple = false): CommandOpt
   };
 }
 
-function command(name: string, options: CommandOption[] = [], aliases: string[] = []): ConsoleCommand {
+function command(
+  name: string,
+  options: CommandOption[] = [],
+  aliases: string[] = [],
+): ConsoleCommand {
   return {
     name,
     namespace: name.includes(':') ? name.split(':')[0] : '',

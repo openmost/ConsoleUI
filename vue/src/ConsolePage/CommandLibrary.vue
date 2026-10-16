@@ -125,17 +125,13 @@
 import { defineComponent, PropType } from 'vue';
 import { ContentBlock } from 'CoreHome';
 import { Field } from 'CorePluginsAdmin';
-import { CommandCatalog, CommandOption, ConsoleCommand } from './types';
-
-interface CommandGroup {
-  namespace: string;
-  commands: ConsoleCommand[];
-}
-
-interface CommandLibraryState {
-  search: string;
-  selectedName: string;
-}
+import {
+  CommandCatalog,
+  CommandGroup,
+  CommandLibraryState,
+  CommandOption,
+  ConsoleCommand,
+} from './types';
 
 export default defineComponent({
   props: {

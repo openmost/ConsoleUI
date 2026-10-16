@@ -1,10 +1,11 @@
 {
   "name": "ConsoleUI",
   "description": "Run Matomo console commands from the browser, with command autocompletion, when you have no SSH access.",
-  "version": "5.0.1",
+  "version": "6.0.0",
   "theme": false,
   "require": {
-    "matomo": ">=5.0.0,<6.0.0-b1"
+    "php": ">=8.1.0",
+    "matomo": ">=6.0.0-b1,<7.0.0-b1"
   },
   "authors": [
     {

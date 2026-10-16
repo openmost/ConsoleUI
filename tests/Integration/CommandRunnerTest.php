@@ -97,7 +97,7 @@ class CommandRunnerTest extends IntegrationTestCase
             $output .= $text;
         });
 
-        $this->assertRegExp('/\x1B\[[0-9;]*m/', $output);
+        $this->assertMatchesRegularExpression('/\x1B\[[0-9;]*m/', $output);
     }
 
     public function testBlockedCommandsDoNotExist()
@@ -191,7 +191,7 @@ class CommandRunnerTest extends IntegrationTestCase
 
     private function assertMatchesNotDefined(string $output): void
     {
-        $this->assertRegExp('/is not defined|no commands defined/', $output);
+        $this->assertMatchesRegularExpression('/is not defined|no commands defined/', $output);
     }
 
     /**

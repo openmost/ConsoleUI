@@ -46,9 +46,6 @@
   },
   "OpenmostCommunication": {
     "Dismiss": "Masquer",
-    "Matomo6Title": "Matomo 6 est là",
-    "Matomo6Body": "Openmost est Implementation Partner officiel de Matomo et travaille avec Matomo depuis 2016. Migrer maintenant est plus simple que de rattraper le retard dans quelques mois : les nouveautés et les améliorations de sécurité arrivent d'abord sur Matomo 6, et nous vous y amenons sans perdre vos rapports ni votre suivi.",
-    "Matomo6Cta": "Planifier ma migration vers Matomo 6",
     "WidgetName": "Openmost : configuration du suivi des chatbots IA",
     "AIChatbotsTitle": "Besoin d'aide pour configurer le suivi des chatbots IA ?",
     "AIChatbotsBody": "Implementation Partner officiel de Matomo, Openmost peut configurer le suivi des chatbots IA pour vous, sur Matomo On-Premise ou Cloud.",

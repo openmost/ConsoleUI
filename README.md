@@ -36,8 +36,9 @@ blocked_commands[] = "user:*"
 
 ### Requirements
 
-- Matomo 5.0.0 or later, up to Matomo 6 excluded (`>=5.0.0,<6.0.0-b1`)
-- On Matomo 6, install Console UI 6.x instead.
+- Matomo 6 (`>=6.0.0-b1,<7.0.0-b1`)
+- PHP 8.1 or later
+- On Matomo 5, install Console UI 5.x instead.
 
 ### Installation / Configuration
 
