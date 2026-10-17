@@ -1,5 +1,9 @@
 ## Changelog
 
+### v5.0.3
+
+- Fix the missing translation of the Stop button
+
 ### v5.0.2
 
 - Accessibility improvements in the console (command suggestions, reload link)
