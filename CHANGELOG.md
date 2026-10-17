@@ -1,5 +1,9 @@
 ## Changelog
 
+### v6.0.1
+
+- Fix the missing translation of the Stop button
+
 ### v6.0.0
 
 - Console page under Administration > Platform > Console, for super users, behind a password confirmation
