@@ -30,9 +30,9 @@ class ConsoleUI extends \Piwik\Plugin
     public function getClientSideTranslationKeys(&$translationKeys)
     {
         $keys = [
-            'Console', 'Disabled', 'SecurityNotice', 'InputLabel', 'InputPlaceholder', 'Run', 'Running', 'Stop', 'Clear',
-            'Copy', 'Copied', 'OutputLabel', 'OutputEmpty', 'ExitCode', 'Duration', 'OutputTruncated',
-            'ConnectionLost', 'UnexpectedError', 'ReloadPage', 'Library', 'LibrarySearch', 'LibraryEmpty',
+            'Console', 'Disabled', 'SecurityNotice', 'InputLabel', 'InputPlaceholder', 'Run', 'Running', 'Stop',
+            'Stopping', 'Stopped', 'Clear', 'Copy', 'Copied', 'OutputLabel', 'OutputEmpty', 'ExitCode', 'Duration',
+            'OutputTruncated', 'ConnectionLost', 'UnexpectedError', 'ReloadPage', 'Library', 'LibrarySearch', 'LibraryEmpty',
             'LibraryCount', 'Arguments', 'Options', 'GlobalOptions', 'Required', 'Optional', 'Usage',
             'InsertCommand', 'KeyboardHints', 'NoDescription', 'Suggestions', 'Aliases',
         ];

@@ -1,5 +1,9 @@
 ## Changelog
 
+### v6.0.3
+
+- Fix: the Stopping and Stopped labels of the console are translated instead of showing a missing translation message.
+
 ### v6.0.2
 
 - Request parameters are read with `Piwik\Request` instead of the deprecated `Common::getRequestVar`, ready for the next Matomo versions.
